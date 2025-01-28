@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column;
+        
+        background-color: lightgreen;
+    }
+    .box{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        width: 30vw;
+        height: 50vh;
+        background-color: white;
+        flex-direction: column;
+        border: none;
+        border-radius: 5px;
+    }
+#text{
+    height: 35vh;
+    width: 25vw;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    outline: none;
+    resize: none;
+    /* font-size: 4vh; */
+    
+}
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+button{
+    margin-top: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+    /* height: 5vh; */
+    background-color: lightgreen;
+    color: white;
+    width: 25vw;
+    border: none;
+    border-radius: 5px;
+}
+</style>
+<body>
+
+<div class="box">
+    <h3>
+Text To Speech Convertor
+    </h3>
+  <textarea name="text" id="text"></textarea>
+    <button>
+Convert To Speech
+    </button>
+</div>
+
+
+<script>
+    const textarea=document.querySelector("textarea");
+    const button=document.querySelector("button");
+    let isspeaking=true
+    const texttospeech=()=>{
+        const synth=window.speechSynthesis;
+        const text=textarea.value;
+        if(!synth.speaking && text){
+            const utter=new SpeechSynthesisUtterance(text);
+            synth.speak(utter)
+        }
+        if(text.length>50){
+            if(synth.speaking && isspeaking){
+                button.innerText="pause";
+                synth.resume()
+                isspeaking=false
+            }
+            else{ button.innerText="resume";
+                synth.pause()
+                isspeaking=true
+            }
+        }
+        if(!synth.speaking && !isspeaking){
+            isspeaking=false;
+            button.innerText="Convert To Speech"
+        }
+
+    }
+    button.addEventListener("click",texttospeech)
+</script>
+</body>
+</html>
