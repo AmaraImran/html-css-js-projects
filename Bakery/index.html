@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <nav class="navbar content">
+    <a href="#">
+      <h2 class="logo">Brew & Bliss</h2>
+    </a>
+
+    <ul class="nav-menu" id="mobile-menu">
+      <button id="menu-close-btn" class="fas fa-times"></button>
+
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+      <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+
+    </ul>
+
+    <button id="menu-open-btn" class="fas fa-bars"></button>
+  </nav>
+</header>
+
+    <main>
+<section class="hero-section" id="home">
+    <div class="content">
+
+        <div class="herodetails">
+            <h2 class="title">Fresh From the Oven</h2>
+            <h3 class="herocontent">Crafted with Love & Served Warm</h3>
+            <p class="description">
+                Discover soft breads, warm pastries, and freshly brewed coffee—
+                all made to bring comfort and joy in every bite.
+            </p>
+
+            <div class="buttons">
+                <a href="#" class="button order">ORDER NOW</a>
+                <a href="#" class="button contact">CONTACT</a>
+            </div>
+        </div>
+
+        <div class="hero-img-container">
+            <img src="images/coffee1.png" alt="Bakery Hero" class="hero-img">
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-content">
+
+        <div class="about-image">
+            <img src="/images/coffee4.jpg" alt="Bakery Image">
+        </div>
+
+        <div class="about-text">
+            <h2>Made With Warmth & Wholesome Flavors</h2>
+            <p>
+                Step into our bakery where every aroma tells a story.
+                From slow-brewed coffee to soft, buttery pastries, we create
+                everything with care, comfort, and craft.  
+                Whether you're here for a peaceful break or a sweet treat,
+                our space is designed to make you feel right at home.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="menu-section" id="menu">
+    <h2 class="section-title">Our Menu</h2>
+
+    <!-- Category Tabs -->
+    <div class="menu-tabs">
+        <button class="tab active" data-category="coffee">Coffee</button>
+        <button class="tab" data-category="cakes">Cakes</button>
+        <button class="tab" data-category="pastries">Pastries</button>
+    </div>
+
+    <!-- MENU GRID -->
+    <div class="menu-grid">
+
+        <!-- ---------- COFFEE CATEGORY ---------- -->
+        <div class="menu-category coffee active">
+
+            <!-- Top 3 wide cards -->
+            <div class="wide-card">
+                <img src="/images/coffee1.png" alt="">
+            </div>
+
+            <div class="wide-card">
+                <img src="images/coffee4.jpg" alt="">
+            </div>
+
+            <div class="wide-card">
+                <img src="images/coffee2.jpg" alt="">
+            </div>
+
+            <!-- Bottom 3 price cards -->
+            <div class="price-card">
+                <img src="/images/coffee2.jpg" alt="">
+                <h3>Caramel Latte</h3>
+                <p class="price">$53</p>
+            </div>
+
+            <div class="price-card">
+                <img src="/images/coffee6.jpg" alt="">
+                <h3>Mocha Delight</h3>
+                <p class="price">$52</p>
+            </div>
+
+            <div class="price-card">
+                <img src="/images/coffee7.jpg" alt="">
+                <h3>Chocolate Cake</h3>
+                <p class="price">$59</p>
+            </div>
+        </div>
+
+        <!-- ---------- CAKES CATEGORY ---------- -->
+        <div class="menu-category cakes">
+            <div class="wide-card">
+                <img src="/images/cake1.jpg" alt="">
+            </div>
+            <div class="wide-card">
+                <img src="/images/cake2.jpg" alt="">
+            </div>
+            <div class="wide-card">
+                <img src="/images/cake3.jpg" alt="">
+            </div>
+
+            <div class="price-card">
+                <img src="images/cak5.jpg" alt="">
+                <h3>Vanilla Dream</h3>
+                <p class="price">$48</p>
+            </div>
+            <div class="price-card">
+                <img src="images/cake4.jpg" alt="">
+                <h3>Berry Bliss</h3>
+                <p class="price">$54</p>
+            </div>
+            <div class="price-card">
+                <img src="/images/biscuits.jpg" alt="">
+                <h3>Oreo Crunch</h3>
+                <p class="price">$62</p>
+            </div>
+        </div>
+
+        <!-- ---------- PASTRIES CATEGORY ---------- -->
+        <div class="menu-category pastries">
+            <div class="wide-card">
+                <img src="images/pastery5.jpg" alt="">
+            </div>
+            <div class="wide-card">
+                <img src="images/pastery2.jpg" alt="">
+            </div>
+            <div class="wide-card">
+                <img src="images/pastery3.jpg" alt="">
+            </div>
+
+            <div class="price-card">
+                <img src="images/pastery4.jpg" alt="">
+                <h3>Hazelnut Roll</h3>
+                <p class="price">$41</p>
+            </div>
+            <div class="price-card">
+                <img src="images/pastery1.jpg" alt="">
+                <h3>Butter Croissant</h3>
+                <p class="price">$33</p>
+            </div>
+            <div class="price-card">
+                <img src="images/pastery6.jpg" alt="">
+                <h3>Cinnamon Twist</h3>
+                <p class="price">$38</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="reviews-section" id="reviews">
+    <h2 class="section-title">Customer Reviews</h2>
+
+    <div class="review-slider-container">
+
+        <button class="slide-btn prev">&#10094;</button>
+
+        <div class="review-slider">
+
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-img">
+                    <img src="images/user1.jpg" alt="">
+                </div>
+                <div class="review-content">
+                    <h3>Sarah Ahmed</h3>
+                    <p>"The cupcakes were incredibly soft and delicious! The packaging was so cute, it made my day! Highly recommended."</p>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-img">
+                    <img src="images/user2.jpg" alt="">
+                </div>
+                <div class="review-content">
+                    <h3>Amna Farooq</h3>
+                    <p>"Fresh, warm croissants just the way I like them! This bakery never disappoints. Amazing taste and fast delivery."</p>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card" >
+                <div class="review-img">
+                    <img src="images/user3.jpg" alt="">
+                </div>
+                <div class="review-content">
+                    <h3>Ali Raza</h3>
+                    <p>"Perfect birthday cake! Moist, flavorful, and beautifully decorated. Customer service was very friendly."</p>
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+                <div class="review-img">
+                    <img src="images/user1.jpg" alt="">
+                </div>
+                <div class="review-content">
+                    <h3>Ayesha Malik</h3>
+                    <p>"Best chocolate lava cake ever! So gooey and rich. I always order from here for special events."</p>
+                </div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card" id="review">
+                <div class="review-img">
+                    <img src="images/user4.jpg" alt="">
+                </div>
+                <div class="review-content">
+                    <h3>Hamza Tahir</h3>
+                    <p>"Their pastries are world-class! Soft, buttery, and extremely fresh. My favorite bakery in town."</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="slide-btn next">&#10095;</button>
+    </div>
+</section>
+
+
+<section class="contact" id="contact">
+    <div class="content">
+
+        <div class="contact-left">
+            <h2>Get in Touch</h2>
+            <p>
+                Have a question, custom order request, or want to book a special sweet moment?
+                We're always here to help!
+            </p>
+
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> brew&Bliss@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+            </div>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+
+    </div>
+</section>
+
+
+
+<footer class="footer" id="footer">
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-section">
+      <h2 class="footer-logo">Brew & Bliss</h2>
+      <p>Your daily dose of warmth, aroma & handcrafted flavors.</p>
+
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div class="footer-section">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Email: hello@brewbliss.com</p>
+      <p>Phone: +92 300 1234567</p>
+      <p>Location: Lahore, Pakistan</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Brew & Bliss — All Rights Reserved
+  </div>
+</footer>
+
+<!-- FontAwesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
